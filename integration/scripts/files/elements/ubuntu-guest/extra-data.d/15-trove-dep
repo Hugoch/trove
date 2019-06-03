@@ -37,7 +37,7 @@ else
     fi
 
     set +e
-    curl -o "${UC_DIR}/${UC_FILE}" \
+    curl -L -o "${UC_DIR}/${UC_FILE}" \
         https://git.openstack.org/cgit/openstack/requirements/plain/${UC_FILE}?h=${UC_BRANCH}
     set -e
 
